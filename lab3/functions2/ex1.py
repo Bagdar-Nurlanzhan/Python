@@ -76,10 +76,10 @@ movies = [
 }]
 
 def first():
+    #принимает один фильм и возвращает True, если его рейтинг IMDB выше 5.5
     s = str(input())
     for i in movies:
         if i["name"] == s:
-        # Проверяем, совпадает ли название фильма с введённым
             if i["imdb"] > 5.5:
                 return True
             else:
@@ -87,6 +87,7 @@ def first():
     return False
 
 def second():
+    #возвращает подсписок фильмов с рейтингом IMDB выше 5.5
     a = []
     for i in movies:
         if i["imdb"] > 5.5:
@@ -94,6 +95,7 @@ def second():
     return a
 
 def third():
+    #принимает название категории и возвращает только те фильмы, которые относятся к данной категории
     s = str(input())
     a=[]
     for i in movies:
@@ -102,6 +104,7 @@ def third():
     return a
 
 def fourth():
+    #принимает список фильмов и вычисляет их средний рейтинг IMDB
     k=0.0
     a=input().split(", ")
     for i in a:
@@ -112,6 +115,7 @@ def fourth():
     return k/len(a)
 
 def fifth():
+    #принимает категорию и вычисляет средний рейтинг IMDB для фильмов этой категории
     k = 0.0
     m = 0
     s=str(input())

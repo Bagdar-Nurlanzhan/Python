@@ -4,6 +4,7 @@ def unique_elements(listt):
         if element not in unique_list:
             unique_list.append(element)
     return unique_list
+
 inputt = input()
 my_list = list(map(int, inputt.split()))
 print("исходный список", my_list)

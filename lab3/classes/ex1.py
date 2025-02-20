@@ -1,5 +1,5 @@
 class StringManipulator:
-    def __init__(self):
+    def __init__(self, name, age: ):
         self.string = ""  
         # инициализация атрибута для хранения строки
 
